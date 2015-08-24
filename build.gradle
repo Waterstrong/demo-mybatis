@@ -8,12 +8,15 @@ repositories {
 }
 
 dependencies {
-    testCompile 'junit:junit:$junitVersion'
-    testCompile 'org.mockito:mockito-all:$mockitoVersion'
-    testCompile('org.assertj:assertj-core:$assertJVersion')
+    compile ('org.mybatis:mybatis:3.3.0')
+    compile ('postgresql:postgresql:9.1-901.jdbc4')
+    compile ('mysql:mysql-connector-java:5.1.36')
+    testCompile('junit:junit:4.11')
+    testCompile('org.mockito:mockito-all:1.9.5')
+    testCompile('org.assertj:assertj-core:2.0.0')
 }
 
-group = 'com.twu.learning'
+group = 'com.twu.elemento'
 version =  'v1.0.0'
 
 allprojects {
